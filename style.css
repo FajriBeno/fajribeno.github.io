@@ -10,3 +10,11 @@
 section {
   padding-top: 6rem;
 }
+
+.coffee-img {
+  width: 100%;
+}
+
+#coffee .row > * {
+  padding: 0;
+}
