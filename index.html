@@ -136,6 +136,42 @@
           </div>
         </div>
       </div>
+
+      <!-- Mobil -->
+      <section id="my-cars">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Cars</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cars-box">
+                <h4 class="cars-name">Chevrolet</h4>
+                <img src="img/Mobil/mobil1-transformed.png" alt="Chevrolet" class="cars-img" />
+                <a href="#" class="btn btn-light">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cars-box">
+                <h4 class="cars-name">Ferrari</h4>
+                <img src="img/Mobil/mobil2-transformed.png" alt="Ferrari" class="cars-img" />
+                <a href="#" class="btn btn-light">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cars-box">
+                <h4 class="cars-name">Mercedes Benz</h4>
+                <img src="img/Mobil/mobil3-transformed.png" alt="Mercedes Benz" class="cars-img" />
+                <a href="#" class="btn btn-light">Show Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Mobil -->
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -244,5 +280,16 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+
+    <!-- Js Vanilla -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.cars-box'), {
+        max: 15,
+        speed: 100,
+        glare: true,
+      });
+    </script>
+    <!-- Akhir Js Vanilla -->
   </body>
 </html>

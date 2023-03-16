@@ -18,3 +18,92 @@ section {
 #coffee .row > * {
   padding: 0;
 }
+
+/* My Cars Section */
+.cars-box {
+  position: relative;
+  background-color: #ecd655;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.cars-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cars-box:hover::before {
+  opacity: 0.4;
+}
+
+.cars-box::after {
+  content: 'CARS';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cars-box:hover::after {
+  opacity: 0.3;
+}
+
+.cars-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.cars-box:hover .cars-name {
+  top: 25px;
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cars-box:hover .btn {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.cars-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 350px;
+  transition: 0.5s;
+}
+
+.cars-box:hover .cars-img {
+  transform: translate3d(-50%, -50%, 100%) rotate(3deg) scale(1.2);
+}
